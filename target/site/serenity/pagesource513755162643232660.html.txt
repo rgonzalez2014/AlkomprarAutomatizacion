@@ -1,0 +1,348 @@
+<html lang="es"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="http://10.181.3.183:8091/jquery/jquery.min.js?v=2.256"></script>
+        <link href="http://10.181.3.183:8091/jquery/jquery-ui.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://10.181.3.183:8091/bootstrap/bootstrap.min.css">
+        <script src="http://10.181.3.183:8091/bootstrap/bootstrap.min.js?v=2.256"></script>
+        <script src="http://10.181.3.183:8091/jquery/jquery-ui.min.js?v=2.256"></script>
+        <script src="http://10.181.3.183:8091/datatables/jquery.dataTables.min.js?v=2.256" type="application/javascript"></script>
+        <link rel="stylesheet" href="http://10.181.3.183:8091/datatables/dataTables.bootstrap.min.css">
+        <script src="http://10.181.3.183:8091/datatables/dataTables.bootstrap.min.js?v=2.256" type="application/javascript"></script>
+        <script src="http://10.181.3.183:8091/datatables/buttons-datatables.js?v=2.256" type="application/javascript"></script>
+        <script src="http://10.181.3.183:8091/sweetalert.min.js?v=2.256"></script>
+        <script src="http://10.181.3.183:8091/blockUI.js?v=2.256"></script>
+        <link rel="stylesheet" href="http://10.181.3.186:81/css/sweet-alert.css">
+        <link rel="stylesheet" href="http://10.181.3.186:81/css/main.css">
+        <script src="http://10.181.3.186:81/js/main.js?v=2.256"></script>
+        <script src="http://10.181.3.186:81/js/adjuntos.js?v=2.256"></script>
+        <script src="http://10.181.3.186:81/js/cargar-adjuntos.js?v=2.256"></script>
+    
+    <title>
+        Medio pago
+    </title>
+</head>
+<body data-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDU3MTg5NzQsImV4cCI6MTYwOTMxODk3NCwicmVmIjoiaHR0cDpcL1wvMTAuMTgxLjMuMTgzOjgwODUiLCJjb2RfdXN1YXJpbyI6IjI1MTIiLCJhbG1hY2VuIjoiIiwibm9taW5hIjoiNDU4OTMwODEiLCJ2ZW5kZWRvciI6ZmFsc2UsImNvZF9wZXJmaWwiOiI0NyIsImNvZF9yb2wiOiIyIiwic2Vzc2lvbmlkIjoiYXJha2owaXZ2bnMxc3UwcTRlamczbWViNjQiLCJub21icmVhcHAiOiJjbV9hbGtvbXByYXIifQ.YkPwm2WpJ3rFaBZ2TCoNz59uBkQKHBOslXyc1I_PNnc" style="">
+<input type="hidden" id="integrations-url" value="http://10.181.3.186:3001">
+
+    <link rel="stylesheet" href="http://10.181.3.183:8091/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" href="http://10.181.3.186:81/css/televentas.css">
+    <script src="http://10.181.3.183:8091/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="http://10.181.3.186:81/js/televentas/metodo-pago.js?v=2.256"></script>
+    <div class="container-fluid">
+        <h2 class="subtitulo">Pedido N° 2626 <small>Medio de pago</small></h2>
+        <div class="panel panel-body panel-default">
+    <div class="col-md-4 col-sm-4">
+        <strong>Cliente</strong> Miguel Santiago Nuñez Ruiz
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <strong>Documento</strong> 31505117
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <strong>Unidad venta</strong> ALKUN
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <strong>Asesor</strong> Asesor Roger, 45893081
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <strong>Productos</strong> 1
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <strong>Total</strong> $629,900
+    </div>
+</div>                <input type="text" value="1" id="cod_estado_pedido" hidden="" disabled="">
+        <input type="text" value="2626" id="cod_pedido" hidden="" disabled="">
+        <input type="text" value="ALKUN" id="unidad" hidden="" disabled="">
+        <input type="text" value="80817999" id="documento_usuario_creacion" hidden="" disabled="">
+        <input type="text" value="11001" id="cod_ciudad" hidden="" disabled="">
+        <fieldset>
+            <div class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                <h2 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Fechas de entrega</h2>
+                <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" style="" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+                    <form id="form-fechas">
+                        <input type="hidden" name="fechas_guardadas" value="1">
+                        <div class="form-group col-md-3">
+                            <label class="control-label-required">Fecha despacho</label>
+                            <input type="text" value="" name="fecha_envio" class="form-control hasDatepicker" required="" readonly="readonly" id="dp1605719085952" disabled="">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="control-label-required">Fecha pactada de entrega</label>
+                            <input type="text" name="fecha_entrega" value="" style="position: relative; z-index: 10" class="form-control hasDatepicker" required="" id="dp1605719085953">
+                        </div>
+                        <div class="form-group col-md-3" hidden="">
+                            <label class="control-label-required">Jornada</label>
+                            <select class="form-control" name="jornada_entrega" required="">
+                                <option value="J0">Cualquiera</option>
+<option value="J1" disabled="disabled">Mañana</option>
+<option value="J2" disabled="disabled">Tarde</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>&nbsp;</label>
+                            <button class="btn btn-primary form-control" type="submit" style="background-color: #337ab7">
+                                <span class="glyphicon glyphicon-floppy-disk"></span> Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                <h2 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="form-medio" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Medio de pago</h2>
+                <form class="form ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" method="post" id="form-medio" style="" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="false">
+                    <input type="text" value="1866620" name="cod_cliente" hidden="">
+                    <div class="col-md-8 col-md-offset-2" hidden="" style="display: block;">
+                        <div class="alert alert-info" role="alert" id="alerta-bono">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            Recomendaciones:
+                            <ol>
+                                <li>
+                                    Los documentos deben estar legibles
+                                </li>
+                                <li>
+                                    Recuerde que el nombre y documento del titular del bono debe ser el mismo de la
+                                    cédula
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2" hidden="" style="display: none;">
+                        <div class="alert alert-info" role="alert" id="alerta-orden">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            Recomendaciones:
+                            <ol>
+                                <li>
+                                    Recuerde validar la vigencia de la orden
+                                </li>
+                                <li>
+                                    Recuerde que la orden debe estar firmada
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                                                <div class="form-group col-md-6">
+                            <label class="control-label-required">Medio de pago</label>
+                            <select class="form-control" id="medio-pago" name="cod_metodo_pago" required="">
+                                <option value="">Seleccione...</option>
+                                                                    <option value="3">
+                                        Bono
+                                    </option>
+                                                                    <option value="4">
+                                        Orden de compra
+                                    </option>
+                                                                    <option value="6">
+                                        Credito 20 minutos
+                                    </option>
+                                                                    <option value="7">
+                                        Consignación
+                                    </option>
+                                                                    <option value="8">
+                                        PayU
+                                    </option>
+                                                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="control-label-required">Valor total pedido</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control" value="629,900" required="" readonly="">
+                            </div>
+                        </div>
+                                                <div class="form-group col-md-12 adjuntosMedio" hidden="" style="display: block;">
+                            <label>Adjuntos</label>
+                            <div class="input-group">
+                                <label class="input-group-btn">
+                                <span class="btn btn-primary">Examinar...
+                                    <input data-adjuntos="3" type="file" name="adjunto[]" style="display: none;" id="cedula" multiple="">
+                                </span>
+                                </label>
+                                <div class="dropdown contenedor-lista-documentos">
+                                    <button class="btn btn-default dropdown-toggle btn-documentos" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; margin: 0px 0px; border-radius: 0px 4px 4px 0px;">Documentos <span class="caret"></span></button>
+                                    <ul class="dropdown-menu col-md-12 lista-documentos" aria-labelledby="lista-documentos" data-required="true"></ul>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="form-group col-md-12 adjuntosMedio" hidden="" style="display: none;">
+                            <label>Orden de compra</label>
+                            <div class="input-group">
+                                <label class="input-group-btn">
+                                <span class="btn btn-primary">Examinar...
+                                    <input type="file" data-adjuntos="3" name="adjunto[]" style="display: none;" id="orden-compra" disabled="" multiple="">
+                                </span>
+                                </label>
+                                <div class="dropdown contenedor-lista-documentos">
+                                    <button class="btn btn-default dropdown-toggle btn-documentos" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; margin: 0px 0px; border-radius: 0px 4px 4px 0px;">Documentos <span class="caret"></span></button>
+                                    <ul class="dropdown-menu col-md-12 lista-documentos" aria-labelledby="lista-documentos" data-required="true"></ul>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="form-group col-md-12 adjuntosMedio" hidden="" style="display: none;">
+                            <label>Comprobante de pago</label>
+                            <div class="input-group">
+                                <label class="input-group-btn">
+                                <span class="btn btn-primary">Examinar...
+                                    <input type="file" data-adjuntos="3" name="adjunto[]" style="display: none;" id="comprobante" disabled="" multiple="">
+                                </span>
+                                </label>
+                                <div class="dropdown contenedor-lista-documentos">
+                                    <button class="btn btn-default dropdown-toggle btn-documentos" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; margin: 0px 0px; border-radius: 0px 4px 4px 0px;">Documentos <span class="caret"></span></button>
+                                    <ul class="dropdown-menu col-md-12 lista-documentos" aria-labelledby="lista-documentos" data-required="true"></ul>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="form-group col-md-6" hidden="" style="display: none;">
+                            <label class="control-label-required">Fecha expedición documento</label>
+                            <input name="fecha_expedicion_documento" type="date" class="form-control" value="1999-12-01" disabled="" required="">
+                        </div>
+                        <div class="form-group col-md-6" hidden="" style="display: none;">
+                            <label class="control-label-required">Actividad económica</label>
+                            <select name="cod_actividad_economica" class="form-control" disabled="" required="">
+                                <option value="">Seleccione...</option>
+                                <option value="1" selected="selected">Empleado</option>
+<option value="2">Independiente Informal</option>
+<option value="3">Independiente Formal</option>
+<option value="4">Ama de Casa</option>
+<option value="5">Jubilado</option>
+<option value="6">Transportador</option>
+<option value="7">Taxista propietario</option>
+<option value="8">Taxista conductor</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6" hidden="" style="display: none;">
+                            <div class="ui-widget">
+                                <label class="control-label-required">Descripción actividad económica</label>
+                                <input class="form-control" type="text" id="nombre_descripcion_actividad" disabled="" value="CRÍA DE GANADO PORCINO." required="">
+                                <input type="hidden" name="descripcion_actividad" disabled="" value="63">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6" hidden="" style="display: none;">
+                            <label class="control-label-required">Profesión</label>
+                            <input name="profesion" type="text" class="form-control" placeholder="Profesión" value="veterinario" minlength="3" maxlength="40" disabled="" required="">
+                        </div>
+                        <div class="form-group col-md-6" hidden="" style="display: none;">
+                            <label class="control-label-required">Cantidad cuotas</label>
+                            <input value="" type="number" min="1" max="99" name="numero_cuotas" class="form-control cantidad-cuotas" disabled="" required="">
+                        </div>
+                        <div class="form-group col-md-6" hidden="" style="display: none;">
+                            <label class="control-label-required">Periodicidad</label>
+                            <select name="periodicidad" class="form-control periodicidad" required="" disabled="">
+                                <option value="">Seleccione...</option>
+                                <option value="57">
+                                    15 días
+                                </option>
+                                <option value="56">
+                                    30 días
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6" hidden="" style="display: none;">
+                            <label>Cuota inicial</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input value="" type="number" name="cuota_inicial" class="form-control cuota-inicial" max="629850" disabled="">
+                            </div>
+                        </div>
+                                                <div class="form-group col-md-12 adjuntosMedio" hidden="" style="display: none;">
+                            <label>Adjuntos</label>
+                            <div class="input-group">
+                                <label class="input-group-btn">
+                                <span class="btn btn-primary">Examinar...
+                                    <input type="file" data-adjuntos="3" name="adjunto[]" style="display: none;" id="adjunto-credito" disabled="" multiple="">
+                                </span>
+                                </label>
+                                <div class="dropdown contenedor-lista-documentos">
+                                    <button class="btn btn-default dropdown-toggle btn-documentos" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; margin: 0px 0px; border-radius: 0px 4px 4px 0px;">Documentos <span class="caret"></span></button>
+                                    <ul class="dropdown-menu col-md-12 lista-documentos" aria-labelledby="lista-documentos"></ul>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="form-group col col-md-6" hidden="" style="display: none;">
+                            <label class="control-label-required">Tipo de pago</label>
+                            <select class="form-control" id="tipo-pago" name="cod_tipo_pago" required="" disabled="">
+                                <option value="">Seleccione...</option>
+                                                                    <option value="1" data="5">
+                                        Datafono
+                                    </option>
+                                                                    <option value="2" data="5">
+                                        Efectivo
+                                    </option>
+                                                                    <option value="3" data="8">
+                                        PSE/Tarjeta crédito
+                                    </option>
+                                                                    <option value="4" data="8">
+                                        Baloto/Efecty/Consignación
+                                    </option>
+                                                            </select>
+                        </div>
+                        <div class="form-group col col-md-6" hidden="" style="display: none;">
+                            <label>Tipo de pago</label>
+                            <input value="" type="text" id="tipo_pago_pay_u" class="form-control" disabled="">
+                        </div>
+                        <div class="form-group col col-md-6" hidden="" style="display: none;">
+                            <label>Referencia de pago</label>
+                            <input value="" type="text" id="referencia_pago_pay_u" class="form-control" disabled="">
+                        </div>
+                        <div class="form-group col col-md-6" hidden="" style="display: none;">
+                            <label>Monto pagado</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input id="monto_pagado_pay_u" type="text" class="form-control" value="0" disabled="">
+                            </div>
+                        </div>
+                        <div class="form-group col col-md-6" hidden="" style="display: none;">
+                            <label>Banco PSE</label>
+                            <input value="" type="text" id="banco_pse_pay_u" class="form-control" disabled="">
+                        </div>
+                        <div class="form-group col col-md-6" hidden="" style="display: none;">
+                            <label>CUS</label>
+                            <input value="" type="text" id="cus" class="form-control" disabled="">
+                        </div>
+                                                <div class="form-group col" id="consignacion" style="margin-left: 2%; display: block;" hidden="">
+                            <label>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="consignacion">Consignación</label>
+                                    <input class="form-check-input" type="checkbox" name="consignacion">
+                                </div>
+                            </label>
+                        </div>
+                                                <div class="form-group col-md-12" id="observaciones" hidden="" style="display: block;">
+                            <label>Observaciones</label>
+                            <textarea class="form-control" name="observaciones" rows="4" style="resize: none"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center col-md-12">
+                        <br>
+                        <a href="/televentas/2626/productos" class="btn btn-primary" style="color: white">
+                            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                        </a>
+                                                    <button id="siguiente" type="submit" class="btn btn-primary" style="color: white">
+                                <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                            </button>
+                                            </div>
+                </form>
+        </div></fieldset>
+    </div>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 259px; left: 361.141px; z-index: 11; display: none;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all ui-state-disabled" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><select class="ui-datepicker-month" data-handler="selectMonth" data-event="change"><option value="10" selected="selected">Nov</option></select>&nbsp;<span class="ui-datepicker-year">2020</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">13</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">17</span></td><td class=" ui-datepicker-unselectable ui-state-disabled  ui-datepicker-today"><span class="ui-state-default">18</span></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day" data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a class="ui-state-default ui-state-active" href="#">19</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a class="ui-state-default" href="#">20</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a class="ui-state-default" href="#">21</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a class="ui-state-default" href="#">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a class="ui-state-default" href="#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a class="ui-state-default" href="#">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a class="ui-state-default" href="#">25</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a class="ui-state-default" href="#">26</a></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">27</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">28</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">29</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">30</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div><div class="swal-overlay" tabindex="-1">
+  <div class="swal-modal" role="dialog" aria-modal="true"><div class="swal-icon swal-icon--success">
+    <span class="swal-icon--success__line swal-icon--success__line--long"></span>
+    <span class="swal-icon--success__line swal-icon--success__line--tip"></span>
+
+    <div class="swal-icon--success__ring"></div>
+    <div class="swal-icon--success__hide-corners"></div>
+  </div><div class="swal-title" style="">Correcto</div><div class="swal-text" style="">Información guardada correctamente</div><div class="swal-footer"><div class="swal-button-container">
+
+    <button class="swal-button swal-button--confirm">Aceptar</button>
+
+    <div class="swal-button__loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+  </div></div></div></div></body></html>

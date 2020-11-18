@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Crear un pedido con pago Bono sin Consignacion</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+        > Crear un pedido con pago Bono sin Consignacion
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-11-2020 12:06</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fa fa-2x fa-comments-o"></i>
+                                        <span class="story-header-title">Realizar El Registro De Un Pedido Con Medio De Pago Bono Con Consignacion</span>
+                                    </h3>
+
+                                    <div class="discreet-requirement-narrative-title">
+                                        
+                                    </div>
+                                </div>
+
+                        </td>
+                        <td valign="top">
+                                <p class="tag">
+                                    <span class="badge tag-badge" style="background:default;">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;"
+                                                                      href="f36f6c3a16d0e3b3c657c1e9b4bad83f1468e523c583a571430d5e98ef3e75c0.html">Cedulaciudadania
+                                    (tag)</a>
+                                </span>
+                                </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">
+                                    Crear un pedido con pago Bono sin Consignacion
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+        <div class="story-title">
+            <h3 class="story-header">Scenario Outline</h3>
+
+            <div class="scenario">Given Se despliega la pagina CRM Alkomprar y se ingresan las credenciales<br><table class='embedded'><thead><th>usuario</th><th>password</th></thead><tbody><tr><td>&lt;Usuario&gt;</td><td>&lt;Password&gt;</td></tr></tbody></table><br>When Se ingresa al modulo de Televentas y se hace clic en Crear<br>Then Se registra el formulario Cliente Factura con una CC<br><table class='embedded'><thead><th>unidadventa</th><th>facturacionelectronica</th><th>tipodocumento</th><th>numerodocumento</th><th>primernombre</th><th>segundonombre</th><th>primerapellido</th><th>segundoapellido</th><th>ciudad</th><th>direccion</th><th>barrio</th><th>celular</th><th>fijo</th><th>email</th><th>genero</th><th>habeas</th></thead><tbody><tr><td>&lt;UnidadVenta&gt;</td><td>&lt;FacturacionElectronica&gt;</td><td>&lt;TipoDocumento&gt;</td><td>&lt;NumeroDocumento&gt;</td><td>&lt;PrimerNombre&gt;</td><td>&lt;SegundoNombre&gt;</td><td>&lt;PrimerApellido&gt;</td><td>&lt;SegundoApellido&gt;</td><td>&lt;Ciudad&gt;</td><td>&lt;Direccion&gt;</td><td>&lt;Barrio&gt;</td><td>&lt;Celular&gt;</td><td>&lt;Fijo&gt;</td><td>&lt;Email&gt;</td><td>&lt;Genero&gt;</td><td>&lt;Habeas&gt;</td></tr></tbody></table><br>And Se registra el formulario Cliente Envio con una CC<br><table class='embedded'><thead><th>tipodocumento_2</th><th>numerodocumento_2</th><th>primernombre_2</th><th>segundonombre_2</th><th>primerapellido_2</th><th>segundoapellido_2</th><th>ciudad_2</th><th>direccion_2</th><th>barrio_2</th><th>celular_2</th><th>fijo_2</th><th>email_2</th><th>genero_2</th></thead><tbody><tr><td>&lt;TipoDocumento_2&gt;</td><td>&lt;NumeroDocumento_2&gt;</td><td>&lt;PrimerNombre_2&gt;</td><td>&lt;SegundoNombre_2&gt;</td><td>&lt;PrimerApellido_2&gt;</td><td>&lt;SegundoApellido_2&gt;</td><td>&lt;Ciudad_2&gt;</td><td>&lt;Direccion_2&gt;</td><td>&lt;Barrio_2&gt;</td><td>&lt;Celular_2&gt;</td><td>&lt;Fijo_2&gt;</td><td>&lt;Email_2&gt;</td><td>&lt;Genero_2&gt;</td></tr></tbody></table><br>And Se agregan los productos al pedido<br><table class='embedded'><thead><th>ean</th><th>cantidad</th></thead><tbody><tr><td>&lt;Ean&gt;</td><td>&lt;Cantidad&gt;</td></tr></tbody></table><br>And Se seleccionan las fechas y el medio de pago bono con consignacion<br><table class='embedded'><thead><th>bono</th><th>observaciones</th></thead><tbody><tr><td>&lt;Bono&gt;</td><td>&lt;Observaciones&gt;</td></tr></tbody></table><br>Then El pedido queda creado</div>
+
+        </div>
+
+    <div id="beforetable"></div>
+
+
+            <h3 class="story-header">Examples:&nbsp;</h3>
+
+
+                <p class="example-tag">
+                </p>
+
+            <div class="example-table test-report">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                            <th>Usuario</th>
+                            <th>Password</th>
+                            <th>Unidadventa</th>
+                            <th>Facturacionelectronica</th>
+                            <th>Tipodocumento</th>
+                            <th>Numerodocumento</th>
+                            <th>Primernombre</th>
+                            <th>Segundonombre</th>
+                            <th>Primerapellido</th>
+                            <th>Segundoapellido</th>
+                            <th>Ciudad</th>
+                            <th>Direccion</th>
+                            <th>Barrio</th>
+                            <th>Celular</th>
+                            <th>Fijo</th>
+                            <th>Email</th>
+                            <th>Genero</th>
+                            <th>Habeas</th>
+                            <th>Tipodocumento 2</th>
+                            <th>Numerodocumento 2</th>
+                            <th>Primernombre 2</th>
+                            <th>Segundonombre 2</th>
+                            <th>Primerapellido 2</th>
+                            <th>Segundoapellido 2</th>
+                            <th>Ciudad 2</th>
+                            <th>Direccion 2</th>
+                            <th>Barrio 2</th>
+                            <th>Celular 2</th>
+                            <th>Fijo 2</th>
+                            <th>Email 2</th>
+                            <th>Genero 2</th>
+                            <th>Ean</th>
+                            <th>Cantidad</th>
+                            <th>Bono</th>
+                            <th>Observaciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="test-ERROR"><a href="#0">1</a></td>
+                                <td class="test-ERROR"><a
+                                            href="#0">asesor_roger</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">123</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">ALKUN</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Si</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">C.C</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">31505117</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Miguel</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Santiago</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Nu&ntilde;ez</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Ruiz</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Bogot&aacute;</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">CL 35 SUR # 78 Q - 29</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Super Manzana 9B - Kennedy</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">3214072323</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">6812121</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">roger.gonzalez.ext@colcomercio.com.co</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Masculino</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">NO</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">C.C</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">1010111186</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Camila</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Ines</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Martinez</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Perez</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Bogot&aacute;</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">CL 35 SUR # 78 Q - 29</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Super Manzana 9B - Kennedy</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">3114997098</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">8056776</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">dianatrivi@hotmail.com</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">Femenino</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">7705946463560</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">1</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">3</a>
+                                </td>
+                                <td class="test-ERROR"><a
+                                            href="#0">test cedula ciudadania</a>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">                        &nbsp;
+                    </th>
+
+                        <th width="%" class="step-description-column greentext">
+                            Steps
+                        </th>
+                        <th width="150" class="greentext">Screenshots</th>
+                    <th width="130" class="greentext">Outcome</th>
+                    <th width="80" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                <tr class="test-ERROR">
+                    <td width="50" class="step-icon">
+                        <a name="0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 error-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                Example: {Usuario=asesor_roger, Password=123, UnidadVenta=ALKUN, FacturacionElectronica=Si, TipoDocumento=C.C, NumeroDocumento=31505117, PrimerNombre=Miguel, SegundoNombre=Santiago, PrimerApellido=Nuñez, SegundoApellido=Ruiz, Ciudad=Bogotá, Direccion=CL 35 SUR # 78 Q - 29, Barrio=Super Manzana 9B - Kennedy, Celular=3214072323, Fijo=6812121, Email=roger.gonzalez.ext@colcomercio.com.co, Genero=Masculino, Habeas=NO, TipoDocumento_2=C.C, NumeroDocumento_2=1010111186, PrimerNombre_2=Camila, SegundoNombre_2=Ines, PrimerApellido_2=Martinez, SegundoApellido_2=Perez, Ciudad_2=Bogotá, Direccion_2=CL 35 SUR # 78 Q - 29, Barrio_2=Super Manzana 9B - Kennedy, Celular_2=3114997098, Fijo_2=8056776, Email_2=dianatrivi@hotmail.com, Genero_2=Femenino, Ean=7705946463560, Cantidad=1, Bono=3, Observaciones=test cedula ciudadania}
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="ERROR-text">
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=0">
+                                    <img src="c4f040cb2dd9044ee5f1df106e9074d8ddb49153c42901ef2d16b26e17c5fd68.png"
+                                         href="c4f040cb2dd9044ee5f1df106e9074d8ddb49153c42901ef2d16b26e17c5fd68.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=13">
+                                    <img src="bbba5d1a08542d18dd614deaaf83961c0c062c303c9e370d3897c9820722d579.png"
+                                         href="bbba5d1a08542d18dd614deaaf83961c0c062c303c9e370d3897c9820722d579.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">21.59s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-0 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Given Se despliega la pagina CRM Alkomprar y se ingresan las credenciales<br><table class='embedded'><thead><th>usuario</th><th>password</th></thead><tbody><tr><td>asesor_roger</td><td>123</td></tr></tbody></table>
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=1">
+                                    <img src="c4f040cb2dd9044ee5f1df106e9074d8ddb49153c42901ef2d16b26e17c5fd68.png"
+                                         href="c4f040cb2dd9044ee5f1df106e9074d8ddb49153c42901ef2d16b26e17c5fd68.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=9">
+                                    <img src="1a34376d1d5b8fc3d9ff55aca61545fb626fc586f28951511157c6e708d9b47a.png"
+                                         href="1a34376d1d5b8fc3d9ff55aca61545fb626fc586f28951511157c6e708d9b47a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">10.32s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Abrir CRM alkomprar
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=2">
+                                    <img src="c4f040cb2dd9044ee5f1df106e9074d8ddb49153c42901ef2d16b26e17c5fd68.png"
+                                         href="c4f040cb2dd9044ee5f1df106e9074d8ddb49153c42901ef2d16b26e17c5fd68.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.9s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-1"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Escribir usuario: asesor_roger
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=3">
+                                    <img src="c4f040cb2dd9044ee5f1df106e9074d8ddb49153c42901ef2d16b26e17c5fd68.png"
+                                         href="c4f040cb2dd9044ee5f1df106e9074d8ddb49153c42901ef2d16b26e17c5fd68.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=4">
+                                    <img src="ce95b1dffadb269defcbbafcb9533e807c8a65c136cdf814fa67f6c0b80fc9fa.png"
+                                         href="ce95b1dffadb269defcbbafcb9533e807c8a65c136cdf814fa67f6c0b80fc9fa.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.55s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-2"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Escribir clave: 123
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=5">
+                                    <img src="ce95b1dffadb269defcbbafcb9533e807c8a65c136cdf814fa67f6c0b80fc9fa.png"
+                                         href="ce95b1dffadb269defcbbafcb9533e807c8a65c136cdf814fa67f6c0b80fc9fa.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=6">
+                                    <img src="013048203235294870bab71f82dbfb12f9e27a06afa63de1ec9d66c8e1a37c72.png"
+                                         href="013048203235294870bab71f82dbfb12f9e27a06afa63de1ec9d66c8e1a37c72.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.57s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-3"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Clic ingresar
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=7">
+                                    <img src="013048203235294870bab71f82dbfb12f9e27a06afa63de1ec9d66c8e1a37c72.png"
+                                         href="013048203235294870bab71f82dbfb12f9e27a06afa63de1ec9d66c8e1a37c72.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=8">
+                                    <img src="1a34376d1d5b8fc3d9ff55aca61545fb626fc586f28951511157c6e708d9b47a.png"
+                                         href="1a34376d1d5b8fc3d9ff55aca61545fb626fc586f28951511157c6e708d9b47a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.66s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-ERROR">
+                    <td width="50" class="step-icon">
+                        <a name="0-1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-1 error-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                When Se ingresa al modulo de Televentas y se hace clic en Crear
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="ERROR-text">
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=10">
+                                    <img src="1a34376d1d5b8fc3d9ff55aca61545fb626fc586f28951511157c6e708d9b47a.png"
+                                         href="1a34376d1d5b8fc3d9ff55aca61545fb626fc586f28951511157c6e708d9b47a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=13">
+                                    <img src="bbba5d1a08542d18dd614deaaf83961c0c062c303c9e370d3897c9820722d579.png"
+                                         href="bbba5d1a08542d18dd614deaaf83961c0c062c303c9e370d3897c9820722d579.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">ERROR</span></td>
+                    <td width="100"><span class="nested-step">11.06s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-1" style="display:none; width:100%">
+
+                <tr class="test-ERROR">
+                    <td width="50" class="step-icon">
+                        <a name="0-1-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Ir modulo televentas
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="ERROR-text">
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=11">
+                                    <img src="880fcafcfee7aff6ec46ba4a0fd0d4915e0b182f4221b1d39550ba829f039899.png"
+                                         href="880fcafcfee7aff6ec46ba4a0fd0d4915e0b182f4221b1d39550ba829f039899.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="ecc94ad2c1ef9e9697c591f63592ba63dde043fde3ba56bf5f3ba79629b730ed_screenshots.html#screenshots?screenshot=12">
+                                    <img src="bbba5d1a08542d18dd614deaaf83961c0c062c303c9e370d3897c9820722d579.png"
+                                         href="bbba5d1a08542d18dd614deaaf83961c0c062c303c9e370d3897c9820722d579.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">ERROR</span></td>
+                    <td width="100"><span class="nested-group-step">11s</span></td>
+                </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Televentas&quot;}<br>  (Session info: chrome=86.0.4240.198)<br>For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:17:03&#39;<br>System info: host: &#39;DESKTOP-C71OTJT&#39;, ip: &#39;192.169.24.62&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;13.0.5&#39;<br>Driver info: org.openqa.selenium.chrome.ChromeDriver<br>Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:virtualAuthenticators: true}<br>Session ID: aab5cd89eb9fae8636f7848ac10eee9a<br>*** Element info: {Using=link text, value=Televentas}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-8""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>cmpqr.cartera.page.RegistroPedido.clicTeleventas(RegistroPedido.java:107)<br />cmpqr.cartera.steps.RegistroPedidoSteps.irModuloTeleventas(RegistroPedidoSteps.java:36)<br />cmpqrcartera.televentas.stepdefinitions.cedulaciudadania.PedidoBonoConConsignacionStepDefinitions.se_ingresa_al_modulo_de_Televentas_y_se_hace_clic_en_Crear(PedidoBonoConConsignacionStepDefinitions.java:30)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SKIPPED">
+                    <td width="50" class="step-icon">
+                        <a name="0-2"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Then Se registra el formulario Cliente Factura con una CC<br><table class='embedded'><thead><th>unidadventa</th><th>facturacionelectronica</th><th>tipodocumento</th><th>numerodocumento</th><th>primernombre</th><th>segundonombre</th><th>primerapellido</th><th>segundoapellido</th><th>ciudad</th><th>direccion</th><th>barrio</th><th>celular</th><th>fijo</th><th>email</th><th>genero</th><th>habeas</th></thead><tbody><tr><td>ALKUN</td><td>Si</td><td>C.C</td><td>31505117</td><td>Miguel</td><td>Santiago</td><td>Nuñez</td><td>Ruiz</td><td>Bogotá</td><td>CL 35 SUR # 78 Q - 29</td><td>Super Manzana 9B - Kennedy</td><td>3214072323</td><td>6812121</td><td>roger.gonzalez.ext@colcomercio.com.co</td><td>Masculino</td><td>NO</td></tr></tbody></table>
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SKIPPED-text">
+
+                        </td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">0.02s</span></td>
+                </tr>
+                <tr class="test-SKIPPED">
+                    <td width="50" class="step-icon">
+                        <a name="0-3"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                And Se registra el formulario Cliente Envio con una CC<br><table class='embedded'><thead><th>tipodocumento_2</th><th>numerodocumento_2</th><th>primernombre_2</th><th>segundonombre_2</th><th>primerapellido_2</th><th>segundoapellido_2</th><th>ciudad_2</th><th>direccion_2</th><th>barrio_2</th><th>celular_2</th><th>fijo_2</th><th>email_2</th><th>genero_2</th></thead><tbody><tr><td>C.C</td><td>1010111186</td><td>Camila</td><td>Ines</td><td>Martinez</td><td>Perez</td><td>Bogotá</td><td>CL 35 SUR # 78 Q - 29</td><td>Super Manzana 9B - Kennedy</td><td>3114997098</td><td>8056776</td><td>dianatrivi@hotmail.com</td><td>Femenino</td></tr></tbody></table>
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SKIPPED-text">
+
+                        </td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">0.03s</span></td>
+                </tr>
+                <tr class="test-SKIPPED">
+                    <td width="50" class="step-icon">
+                        <a name="0-4"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                And Se agregan los productos al pedido<br><table class='embedded'><thead><th>ean</th><th>cantidad</th></thead><tbody><tr><td>7705946463560</td><td>1</td></tr></tbody></table>
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SKIPPED-text">
+
+                        </td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">0.02s</span></td>
+                </tr>
+                <tr class="test-SKIPPED">
+                    <td width="50" class="step-icon">
+                        <a name="0-5"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                And Se seleccionan las fechas y el medio de pago bono con consignacion<br><table class='embedded'><thead><th>bono</th><th>observaciones</th></thead><tbody><tr><td>3</td><td>test cedula ciudadania</td></tr></tbody></table>
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SKIPPED-text">
+
+                        </td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">0.02s</span></td>
+                </tr>
+                <tr class="test-SKIPPED">
+                    <td width="50" class="step-icon">
+                        <a name="0-6"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Then El pedido queda creado
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SKIPPED-text">
+
+                        </td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                    <td width="100"><span class="nested-group-step">0.03s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-ERROR">
+                        <td colspan="3"></td>
+                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>22.74s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="beforefooter"></div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="version">Serenity BDD version 2.0.80</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            } else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+                src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+    </body>
+</html>

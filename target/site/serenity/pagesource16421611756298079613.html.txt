@@ -1,0 +1,538 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="icono.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">   
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Contact Manager</title>
+<script type="text/javascript" src="../lib/jquery/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="../../lib/DataTables/media/js/datatables.min.js"></script>
+<script type="text/javascript" src="../../lib/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../../lib/bootstrap-toggle-master/js/bootstrap-toggle.js"></script>
+<script type="text/javascript" src="../../lib/date_picker/calendar.js"></script>
+<script type="text/javascript" src="../../lib/date_picker/lang/calendar-en.js"></script>
+<script type="text/javascript" src="../../lib/date_picker/calendar-setup.js"></script>
+<script type="text/javascript" src="scripts/mootools-1.2.1.js"></script>
+<script type="text/javascript" src="scripts/timer.js"></script>
+<script type="text/javascript" src="scripts/funciones_generalesant.js?v=2.2"></script>
+<script type="text/javascript" src="../../lib/NiftyCube/niftycube.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.blockUI.js"></script>
+<script type="text/javascript" src="../../lib/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="../../lib/sweetalert/dist/sweetalert.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../lib/bootstrap-toggle-master/css/bootstrap-toggle.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" href="../../lib/DataTables/media/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet" href="estilos/submodal.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../lib/date_picker/calendar-blue.css" title="win2k-cold-1">
+<link rel="stylesheet" href="estilos/estilo.css?v=2.1" type="text/css" media="screen">
+<link rel="stylesheet" href="estilos/tabssubmenu.css" type="text/css" media="screen">
+<script>
+var j = jQuery.noConflict();
+var nventanas = 0;
+var name_ventana = "";
+var pasoalerta = 0;
+var tiempoalerta = 3000;
+var pasocaduca = 0;
+window.onload = function () {
+if ($chk($('tdcentro')))
+{
+var tamanoy = window.getSize().y;
+var tamanox = window.getSize().x;
+var titulo = 0;
+if ($chk($('menutd')))
+{
+titulo = $('menutd').getStyle("height");
+}
+if ($chk($('tdmenuder')))
+{
+titulo = $('tdmenuder').getStyle("height");
+}
+var pie = $('tdpie').getStyle("height");
+var pie2 = parseInt(pie) / 2;
+tamanoy = tamanoy - parseInt(titulo) - parseInt(pie) - pie2;
+$('tdcentro').setStyle("height", tamanoy);
+}
+Nifty("ul#nav a", "small transparent top");
+//Nifty("div#titulocurva","top");
+//Nifty("div#titulocurvacart","top");
+var tiempo = 120000;
+var hilo = setInterval("revisa_alerta()", tiempo);
+var pasoalerta;
+}
+function abre_alarma(pagina)
+{
+webform(pagina, "Pqr_Alarma");
+}
+</script>
+<link type="text/css" rel="stylesheet" href="../../lib/NiftyCube/niftyCorners.css" media="screen"></head>
+<body><input type="hidden" name="pagina_alerta" id="pagina_alerta" value="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?modulo=6&amp;funcion=82">
+<div align="center">
+<div id="titulobarra1" class="titulobarra" style="display:none;">
+<table width="100%" border="1" id="tabladatos" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th><div align="center">ALERTAS</div></th>
+<th width="8px"><input name="imagefield" type="image" src="imagenes/minimizar.jpg" onclick="minimizar('idalerta')"></th>
+<th width="8px"> <input name="imagefield" type="image" src="imagenes/encuadre.jpg" onclick="maximizar('idalerta')"></th>	
+<th width="8px"> <input name="imagefield" type="image" src="imagenes/cerrar.jpg" onclick="cierraalerta()"></th>
+</tr>
+</tbody></table>		
+</div>		
+<div id="idalerta" style="display:none;"></div>
+</div><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="tdmenuder" id="tdmenuder"><table width="100%">
+<tbody><tr><td width="60%">
+<div id="marco"> 
+<span class="preload11"></span>
+<ul class="menu11">
+<img src="imagenes/menu_izq.gif" align="left">
+<img src="imagenes/menu_der.gif" align="right">
+<li class="top"><a href="#" class="top_link"><span class="down">Administración</span></a>		
+<ul class="sub">
+<li><a href="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?rand=1912605638&amp;modulo=149&amp;token=454e64462b786948787775465a687a523342633848773d3d">Malla de Turnos</a></li>
+</ul></li>
+<li class="top"><a href="#" class="top_link"><span class="down">Principal</span></a>		
+<ul class="sub">
+<li><a href="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?rand=1912605638&amp;modulo=153&amp;token=427669686a737063533761547877616f7862694c45413d3d">Bandeja tareas</a></li>
+<li><a href="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?rand=1912605638&amp;modulo=150&amp;token=4a5749753473454c642b36586334324b68546d6e2f413d3d">Pausas</a></li>
+<li><a href="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?rand=1912605638&amp;modulo=22">Pqr</a></li>
+<li><a href="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?rand=1912605638&amp;modulo=3">Principal</a></li>
+<li><a href="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?rand=1912605638&amp;modulo=156&amp;token=73626b324a44637359536d6c2b6a504d304f477848673d3d">Televentas</a></li>
+</ul></li>
+<li class="top"><a href="#" onclick="cierre_salir('http://10.181.3.183:8085/cmpqr_cartera/revisa.php?rand=1912605638&amp;modulo=6&amp;funcion=99')" class="top_link"><span class="down">Salir</span></a></li>
+</ul></div>
+</td>
+<td style="color:#003" width="40%">
+<div align="left" id="princinombre" style="font-size:12px"><strong></strong></div>
+</td></tr></tbody></table>
+</td>
+<td class="tdmenuiz">
+Modulo : 
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdcentro" id="tdcentro" style="height: 588px;">
+<script type="text/javascript" src="scripts/funciones_pqr_informacion.js?v=2.12"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/submodal.js"></script>
+<input type="hidden" value="1" id="procesa_info" name="procesa_info">
+<input type="hidden" name="pagina_preventa" id="pagina_preventa" value="">
+<div id="datosprincipal" align="center">
+<table>
+<tbody><tr>
+<td>
+<div class="boxpqr" align="center">
+<table id="tablapqr"><tbody><tr><th colspan="2"><div align="center">Unidad De Negocio</div></th></tr>
+<tr><td style="width:10%">
+<div align="center">
+<img src="imagenes/notepad.png" width="30px" height="30px" onclick="habilita_notepad()">
+</div>
+</td>
+<td>
+<div align="center">
+<select name="unidad" id="unidad" class="camposdatos">
+<option label="ALKOMPRAR" value="ALKOM" selected="selected">ALKOMPRAR</option>
+</select></div>
+</td></tr>			
+</tbody></table>
+<div class="boxpqr" id="idnotepad" style="display:none">
+<table width="100%" border="1" id="tabladatos" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th>Block De Notas</th>
+</tr>
+<tr><td align="center">
+<textarea name="notepad" id="notepad" class="spell_check camposdatos" cols="110" rows="5"></textarea>
+</td></tr>
+<tr>
+<td align="center">
+<input type="button" name="copiar_info" id="copiar_info" value="Copiar Informacion al Caso" class="botones" onclick="copia_info()">
+<input type="button" name="borrar_info" id="borrar_info" value="Borra Block de Notas" class="botones" onclick="borrarblock()">
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="titulodatoscliente" class="titulobarra">
+<table width="100%" border="1" id="tabladatos" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th><div align="center">Datos Del Contacto</div></th>
+<th width="8px">		
+</th><th width="8px"><img src="imagenes/minimizar.jpg" onclick="minimizar('datos_contacto')"></th>
+<th width="8px"> <img src="imagenes/encuadre.jpg" onclick="maximizar('datos_contacto')"></th>
+</tr>
+</tbody></table>		
+</div>	
+<div id="datos_contacto" class="boxpqr" align="center">
+<table id="tablapqr">				
+<tbody><tr>
+<td>Identificacion</td><td><input type="text" value="" id="documento_contacto" name="documento_contacto" class="camposdatos">
+<input type="hidden" value="" id="cod_contacto" name="cod_contacto">
+<input type="hidden" value="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?modulo=6&amp;funcion=56&amp;telefonoid=&amp;nit=" id="paginabusquedacon" name="paginabusquedacon">
+<input type="hidden" value="" id="documento_busqueda" name="documento_busqueda">
+<input type="hidden" value="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?modulo=6&amp;funcion=55&amp;nit=" id="paginabusqueda" name="paginabusqueda">			
+<div id="idbuscando"></div>
+</td>
+<td>Nombres y Apellidos</td><td><input type="text" value="" id="nombre_contacto" name="nombre_contacto" class="camposdatos">		
+</td> 
+</tr>
+<tr>
+<td>Telefono id</td><td><input type="text" value="" id="telefonoid" name="telefonoid" class="camposdatos">
+<input type="hidden" value="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?modulo=6&amp;funcion=56&amp;nit=" id="paginabusquedacli" name="paginabusquedacli">
+<input type="hidden" value="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?modulo=6&amp;funcion=16&amp;cod_dpto=" id="paginaciudad" name="paginaciudad">
+<!--
+<br>
+-->
+</td>
+<td colspan="2"><input type="button" value="Copiar datos Al Comprador" name="copia" id="copia" class="botones">  </td> 
+</tr>
+</tbody></table>
+</div>
+<br>
+</div>
+<div id="divdatocontacto"> 
+<form method="post" name="formcreacion" id="formcreacion" action="revisa.php?modulo=6&amp;funcion=58" autocomplete="off">
+<div id="titulodatoscliente" class="titulobarra">
+<table width="100%" border="1" id="tabladatos" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th>
+<div align="center">Datos Cliente</div>
+</th>
+<th width="8px">
+</th><th width="8px"><img src="imagenes/minimizar.jpg" onclick="minimizar('datos_comprador')"></th>
+<th width="8px"> <img src="imagenes/encuadre.jpg" onclick="maximizar('datos_comprador')"></th>
+</tr>
+</tbody></table>
+</div>
+<div class="boxpqr" align="center" id="datos_comprador">
+<input type="hidden" name="unidadnom" id="unidadnom" value="ALKOM">
+<table id="tablapqr">
+<tbody><tr>
+<td>Identificacion</td>
+<td>
+<input type="hidden" value="" name="cliente_ps" id="cliente_ps">
+<input type="text" value="" class="datoclientedisabled camposdatos" name="nit" id="nit">
+<div id="divbusquedacliente"> </div>
+</td>
+<td>Nombres y Apellidos</td>
+<td colspan="3">
+<input type="hidden" class="datocliente" value="" name="cod_cliente" id="cod_cliente">
+<input type="text" size="60" class="datocliente camposdatos" value="" id="empresa" name="empresa"></td>
+</tr>
+<tr>
+<td>Genero</td>
+<td>
+<select name="sexo" id="sexo" class="camposdatos">
+<option value="1">MASCULINO </option> <option value="2">FEMENINO</option>
+</select>
+</td>
+<td>Email</td>
+<td><input type="text" value="" class="datocliente camposdatos" name="email" id="email">
+<img src="imagenes/busqueda.gif" onclick="procesa_adiciondatos('','idemailadicional')" alt="Detalle Email" height="20" width="20">
+<img src="imagenes/new.png" onclick="showPopWin('',650,300,null)" alt="Agregar" height="20" width="20">
+<div id="idemailadicional"></div><br>
+</td>
+<td>Canal</td>
+<td><input type="text" value="" class="datocliente camposdatos" id="cod_canal" name="cod_canal" disabled=""></td>
+</tr>
+<tr>
+<td rowspan="2">Direccion</td>
+<td rowspan="2">
+<table width="100%">
+<tbody><tr>
+<td><textarea name="direccion" id="direccion" cols="15" class="datocliente camposdatos" rows="3"></textarea></td>
+<td><img src="imagenes/busqueda.gif" onclick="procesa_adiciondatos('&amp;tipo=1','idradicional')" alt="Detalle Direccion" height="20" width="20"></td>
+<td><img src="imagenes/new.png" onclick="showPopWin('&amp;tipo=1',700,400,null)" alt="Agregar" height="20" width="20"></td>
+<td>
+<div id="idradicional"></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>Departamento</td>
+<td> 
+<select id="departamento" name="departamento" class="camposdatos">
+<option label="AMAZONAS" value="91" selected="selected">AMAZONAS</option>
+<option label="ANTIOQUIA" value="5">ANTIOQUIA</option>
+<option label="ARAUCA" value="81">ARAUCA</option>
+<option label="ATLANTICO" value="8">ATLANTICO</option>
+<option label="BOLIVAR" value="13">BOLIVAR</option>
+<option label="BOYACA" value="15">BOYACA</option>
+<option label="CALDAS" value="17">CALDAS</option>
+<option label="CAQUETA" value="18">CAQUETA</option>
+<option label="CASANARE" value="85">CASANARE</option>
+<option label="CAUCA" value="19">CAUCA</option>
+<option label="CESAR" value="20">CESAR</option>
+<option label="CHOCO" value="27">CHOCO</option>
+<option label="CORDOBA" value="23">CORDOBA</option>
+<option label="CUNDINAMARCA" value="25">CUNDINAMARCA</option>
+<option label="GUAINIA" value="94">GUAINIA</option>
+<option label="GUAJIRA" value="44">GUAJIRA</option>
+<option label="GUAVIARE" value="95">GUAVIARE</option>
+<option label="HUILA" value="41">HUILA</option>
+<option label="MAGDALENA" value="47">MAGDALENA</option>
+<option label="META" value="50">META</option>
+<option label="NARIÑO" value="52">NARIÑO</option>
+<option label="NORTE DE SANTANDER" value="54">NORTE DE SANTANDER</option>
+<option label="OTROS DEPARTAMENTOS" value="1">OTROS DEPARTAMENTOS</option>
+<option label="PUTUMAYO" value="86">PUTUMAYO</option>
+<option label="QUINDIO" value="63">QUINDIO</option>
+<option label="RISARALDA" value="66">RISARALDA</option>
+<option label="SANTAFE DE BOGOTA" value="11">SANTAFE DE BOGOTA</option>
+<option label="SANTANDER" value="68">SANTANDER</option>
+<option label="SUCRE" value="70">SUCRE</option>
+<option label="TOLIMA" value="73">TOLIMA</option>
+<option label="VALLE" value="76">VALLE</option>
+<option label="VAUPES" value="97">VAUPES</option>
+<option label="VICHADA" value="99">VICHADA</option>
+</select>
+</td>
+<td>Telefono:
+<div>Celular :</div>
+</td>
+<td>
+<table width="100%">
+<tbody><tr>
+<td>
+<input type="text" value="" class="datocliente camposdatos" name="telefono1" id="telefono1">
+<input type="text" value="" class="datocliente camposdatos" name="celular" id="celular">
+</td>
+<td><img src="imagenes/busqueda.gif" onclick="procesa_adiciondatos('','telefonosadicionales')" style="" alt="Detalle Telefonos" height="20" width="20">
+</td>
+<td>
+<img src="imagenes/new.png" onclick="showPopWin('&amp;tipo=1',650,300,null)" alt="Agregar" height="20" width="20">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div id="telefonosadicionales"></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td>Ciudad</td>
+<td>
+<div id="idcombociudad"><select class="form-control camposdatos" name="cod_ciudad" id="cod_ciudad" required=""><option value=""></option><option value="91263">EL ENCANTO (AMAZONAS)</option><option value="91405">LA CHORRERA (AMAZONAS)</option><option value="91407">LA PEDRERA (AMAZONAS)</option><option value="91430">LA VICTORIA (AMAZONAS)</option><option value="91001" selected="selected">LETICIA</option><option value="91460">MIRITI PARANA</option><option value="91530">PUERTO ALEGRIA (AMAZONAS)</option><option value="91536">PUERTO ARICA (AMAZONAS)</option><option value="91540">PUERTO NARIÑO (AMAZONAS)</option><option value="91669">PUERTO SANTANDER (AMAZONAS)</option><option value="91798">TARAPACA (AMAZONAS)</option></select></div>
+</td>
+<td>Zona</td>
+<td>
+<table width="100%">
+<tbody><tr>
+<td>
+<input type="text" value="" id="zona" class="datocliente camposdatos" name="zona" disabled="">
+</td>
+<td><img src="imagenes/busqueda.gif" onclick="procesa_adiciondatos('','zonaadicionales')" style="" alt="Zonas Adicionales" height="20" width="20">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div id="zonaadicionales"></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td colspan="2">Observaciones del cliente:
+</td><td colspan="2">
+<textarea cols="40" rows="5" id="observacion" name="observacion" class="camposdatos"></textarea>
+</td>
+<td colspan="2">					<a href="#" onclick="showPopWin(''+$('lead_id').value,500,150,null)">
+<div class="no_existe_autorizacion">No Tiene Autorizacion <br>Vigente Actualizar</div>
+</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div align="center">
+<input type="button" value="   Creacion de Clientes   " name="crea" id="crea" class="botones" onclick="crea_nuevocomprador()" disabled="">
+</div>
+</td>
+<td colspan="2">
+<div align="center"><input type="submit" value="  Guardar  " name="guardar" class="botones">
+</div>
+</td>
+<td>
+<div align="center">
+<input type="button" value="  Buscar  " name="busca" class="botones" onclick="busqueda_casos()">
+</div>
+</td>
+<td>
+<div align="center">
+<input type="button" value="  Buscar Facturas  " name="buscar_facturas" onclick="busca_facturas()" id="buscar_facturas" class="botones">
+<input type="hidden" name="pagina_facturas" id="pagina_facturas" value="">
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="titulo_historial_caso" class="titulobarra">
+<table width="100%" border="1" id="tabladatos" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th>
+<div align="center">Historial Caso</div>
+</th>
+<th width="8px">
+</th><th width="8px"><img src="imagenes/minimizar.jpg" onclick="minimizar('historial_caso')"></th>
+<th width="8px"> <img src="imagenes/encuadre.jpg" onclick="maximizar('historial_caso')"></th>
+</tr>
+</tbody></table>
+</div>
+<div id="historial_caso" class="boxpr" align="center">
+<input type="hidden" name="paginaguardada" id="paginaguardada" value="">
+<input type="hidden" name="paginanterior" id="paginanterior" value="">
+<table id="tablapqr">
+<tbody><tr>
+<td>
+<div id="historialcaso">
+<table width="100%" id="tablapqr" border="1">
+<tbody><tr>
+<th colspan="8">Casos Comprador</th>
+</tr>
+<tr>
+<th>Cod_caso</th>
+<th>Fecha</th>
+<th>Resumen</th>
+<th>Usuario</th>
+<th>Tipo</th>
+<th>Area</th>
+<th>Clase</th>
+<th>Gestion</th>
+</tr>
+</tbody></table>
+<br>
+<table width="100%" id="tablapqr" border="1">
+<tbody><tr>
+<th colspan="8">Casos Contacto</th>
+</tr>
+<tr>
+<th>Cod_caso</th>
+<th>Fecha</th>
+<th>Resumen</th>
+<th>Usuario</th>
+<th>Tipo</th>
+<th>Area</th>
+<th>Clase</th>
+<th>Gestion</th>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="hidden" name="paginanuevocaso" value="" id="paginanuevocaso">
+<input type="hidden" name="paginafuncion" value="" id="paginafuncion">
+<div align="center">
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="titulo_historial_seg" class="titulobarra">
+<table width="100%" border="1" id="tabladatos" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th>
+<div align="center">Historial Telefonico</div>
+</th>
+<th width="8px">
+</th><th width="8px"><img src="imagenes/minimizar.jpg" onclick="minimizar('historial_seg')"></th>
+<th width="8px"> <img src="imagenes/encuadre.jpg" onclick="maximizar('historial_seg')"></th>
+</tr>
+</tbody></table>
+</div>
+<div class="boxpqr" id="historial_seg" align="center" style="display: none;">
+</div>
+</form>
+<div id="idprocesando"></div></div>
+</td>
+<td><div id="idseguimiento" style="display:none"><table id="idtablaseguimiento">
+<tbody><tr>
+<th>Cod cliente</th>
+<td>
+<input type="text" name="cod_clienteseguimiento" id="cod_clienteseguimiento" value="" class="camposdatos"> 
+</td>
+</tr>
+<tr>
+<th>Fecha</th>
+<td>
+<input type="text" name="fecha" id="fecha" value="" class="camposdatos"> 
+</td>
+</tr>
+<tr>
+<th>Hora</th>
+<td>
+<input type="text" name="hora_ini" id="hora_ini" value="" class="camposdatos"> 
+</td>
+</tr>
+<tr>
+<th>Usuario</th>
+<td>
+<input type="text" name="cod_usuario" id="cod_usuario" value="2512" class="camposdatos"> 
+</td>
+</tr>
+<tr>
+<th>Lead Id</th>
+<td>
+<input type="text" name="lead_id" id="lead_id" value="0" class="camposdatos"> 
+</td>
+</tr>
+<tr>
+<th>Seguimiento</th>
+<td>
+<input type="text" name="cod_seguimiento" id="cod_seguimiento" value="0" class="camposdatos"> 
+</td>
+</tr>
+<tr>
+<th>Telefono</th>
+<td>
+<input type="text" name="telefonoid" id="telefonoid" value="" class="camposdatos"> 
+</td>
+</tr>
+<tr>
+<th>Tipo</th>
+<td>
+<input type="text" name="cod_tipo" id="cod_tipo" value="" class="camposdatos"> 
+</td>
+</tr>
+<tr>
+<th>Observaciones</th>
+<td>
+<textarea name="observaciones" id="observaciones" class="camposdatos"></textarea> 
+</td>
+</tr>
+</tbody></table></div></td>
+</tr>
+</tbody></table></div>
+<input type="hidden" name="paginaacciones" id="paginaacciones" value="http://10.181.3.183:8085/cmpqr_cartera/revisa.php?modulo=6&amp;funcion=">
+<div id="tituloframe" class="titulobarra" style="display:none">
+<table width="100%" border="1" id="tabladatos" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th><div align="center">PQR</div></th>
+<th width="8px">		
+</th><th width="8px"><img src="imagenes/minimizar.jpg" onclick="minimizar('frame_pqr')"></th>
+<th width="8px"> <img src="imagenes/encuadre.jpg" onclick="maximizar('frame_pqr')"></th>
+</tr>
+</tbody></table>		
+</div>	
+<iframe id="frame_pqr" align="center" style="display:none">
+</iframe><br>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdpie" id="tdpie"><div hidden="">
+<table class="pie_pagina" width="98%"><tbody><tr>
+<td align="left">Contact Manager Version 3.1</td>
+<td align="left">Usuario:Asesor Roger</td>
+<td align="left">Base:</td>
+<td align="left">&nbsp;&nbsp;&nbsp;Servidor:</td>
+<td align="left">&nbsp;&nbsp;&nbsp;Fecha De Cierre Sesion : 
+<input type="hidden" name="ultimoAcceso" id="ultimoAcceso" value="">
+<input type="hidden" name="pagina_salida" id="pagina_salida" value="">
+</td>
+<td align="left" id="idexpira">&nbsp;&nbsp;</td>
+<td align="right">Tiempo de Ejecucion pagina: 0,017570972442627</td></tr></tbody></table></div></td>
+</tr></tbody></table>
+<div id="popupMask"></div><div id="popupContainer"><div id="popupInner"><div id="popupTitleBar"><div id="popupTitle"></div><div id="popupControls"><img src="imagenes/close.gif" onclick="hidePopWin(false);" id="popCloseBox"></div></div><iframe src="templates/loading.html" style="width:100%;height:100%;background-color:transparent;" scrolling="auto" frameborder="0" allowtransparency="true" id="popupFrame" name="popupFrame" width="100%" height="100%"></iframe></div></div></body></html>

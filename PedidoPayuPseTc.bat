@@ -1,0 +1,1 @@
+gradle clean test --tests cmpqrcartera.televentas.runners.cedulaciudadania.PedidoPayuPseTcRunner aggregate & cd target/site/serenity & index.html

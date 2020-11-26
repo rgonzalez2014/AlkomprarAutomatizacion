@@ -1,1 +1,1 @@
-gradle clean test --tests cmpqrcartera.televentas.runners.cedulaciudadania.PedidoBonoConConsignacionRunner aggregate & cd target/site/serenity & index.html
+radle clean test --tests cmpqrcartera.televentas.runners.cedulaciudadania.PedidoBonoConConsignacionRunner aggregate & cd target/site/serenity & index.html

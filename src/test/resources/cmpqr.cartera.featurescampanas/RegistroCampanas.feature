@@ -14,8 +14,8 @@ Feature: Realizar el registro de una campana
     And Y al guardar se presenta la pagina principal
 
     Examples:
-      | Usuario  | Password | Nombre             | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal      | Responsable         | Gestion  | CampanaVicidial                | Observaciones  |
-      | adminpqr | 123      | cartera predictiva | 2020-09-30  | 2020-09-30 | 0800am     | 0600pm  | 1    | SI         | Cartera | Predictiva | Administrador Pqr 1 | Aprobado | MED Campana Cartera Predictiva | automatizacion |
+      | Usuario  | Password | Nombre             | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal | Responsable         | Gestion | CampanaVicidial                | Observaciones  |
+      | adminpqr | 123      | Cartera Predictiva | 2020-12-15  | 2020-12-15 | 0800am     | 0600pm  | 1    | SI         | Cartera | 1     | Administrador Pqr 1 | 419     | MED Campaña Cartera Predictiva | automatizacion |
 
 
   @ProgresivaCartera
@@ -32,8 +32,8 @@ Feature: Realizar el registro de una campana
     And Y al guardar se presenta la pagina principal
 
     Examples:
-      | Usuario  | Password | Nombre             | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal      | Responsable         | Gestion      | CampanaVicidial                | Observaciones  |
-      | adminpqr | 123      | cartera progresiva | 2020-09-29  | 2020-09-29 | 0800am     | 0600pm  | 1    | Si         | Cartera | Progresiva | Administrador Pqr 1 | Buzon de voz | MED Campana Cartera Progresiva | automatizacion |
+      | Usuario  | Password | Nombre             | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal | Responsable         | Gestion | CampanaVicidial                | Observaciones  |
+      | adminpqr | 123      | cartera progresiva | 2020-12-16  | 2020-12-16 | 0800am     | 0600pm  | 1    | SI         | Cartera | 2     | Administrador Pqr 1 | 383     | MED Campaña Cartera Progresiva | automatizacion |
 
   @MensajesCartera
   Scenario Outline: Registrar una campana de cartera mensajes
@@ -49,8 +49,8 @@ Feature: Realizar el registro de una campana
     And Y al guardar se presenta la pagina principal
 
     Examples:
-      | Usuario  | Password | Nombre           | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal            | Responsable         | Plantilla                | Observaciones  |
-      | adminpqr | 123      | cartera mensajes | 2020-09-28  | 2020-09-28 | 0800am     | 0600pm  | 1    | SI         | Cartera | Mensaje de Texto | Administrador Pqr 1 | Mensaje cartera 22052020 | automatizacion |
+      | Usuario  | Password | Nombre           | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal | Responsable         | Plantilla    | Observaciones  |
+      | adminpqr | 123      | cartera mensajes | 2020-12-16  | 2020-12-16 | 0800am     | 0600pm  | 1    | SI         | Cartera | 5     | Administrador Pqr 1 | CON VARIABLE | automatizacion |
 
   @GrabacionesCartera
   Scenario Outline: Registrar una campana de cartera grabaciones
@@ -66,10 +66,10 @@ Feature: Realizar el registro de una campana
     And Y al guardar se presenta la pagina principal
 
     Examples:
-      | Usuario  | Password | Nombre              | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal            | Responsable         | CampanaVicidial             | Observaciones  |
-      | adminpqr | 123      | cartera grabaciones | 2020-09-27  | 2020-09-27 | 0800am     | 0600pm  | 1    | SI         | Cartera | Mensaje de Texto | Administrador Pqr 1 | MED Campana Cartera 15 - 30 | automatizacion |
+      | Usuario  | Password | Nombre              | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal | Responsable         | CampanaVicidial                   | Observaciones  |
+      | adminpqr | 123      | cartera grabaciones | 2020-12-17  | 2020-12-17 | 0800am     | 0600pm  | 1    | SI         | Cartera | 4     | Administrador Pqr 1 | Grabaciones automáticas CARTERA 1 | automatizacion |
 
-  @MCartera
+  @ManCartera
   Scenario Outline: Registrar una campana de cartera manual
     Given Se despliega la pagina CRM Alkomprar
     And El administrador ingresa las credenciales
@@ -83,8 +83,8 @@ Feature: Realizar el registro de una campana
     And Y al guardar se presenta la pagina principal
 
     Examples:
-      | Usuario  | Password | Nombre         | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal  | Responsable         | Gestion  | Observaciones  |
-      | adminpqr | 123      | cartera manual | 2020-09-28  | 2020-09-28 | 0800am     | 0600pm  | 1    | SI         | Cartera | Manual | Administrador Pqr 1 | Aprobado | automatizacion |
+      | Usuario  | Password | Nombre         | FechaInicio | FechaFin   | HoraInicio | HoraFin | Dias | Actualizar | Area    | Canal | Responsable         | Gestion | Observaciones  |
+      | adminpqr | 123      | cartera manual | 2020-12-18  | 2020-12-18 | 0800am     | 0600pm  | 1    | SI         | Cartera | 3     | Administrador Pqr 1 | 419     | automatizacion |
 
 
   @PredictivaSac

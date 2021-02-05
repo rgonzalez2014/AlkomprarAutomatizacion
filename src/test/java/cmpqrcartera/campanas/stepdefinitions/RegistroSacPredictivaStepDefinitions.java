@@ -14,7 +14,7 @@ public class RegistroSacPredictivaStepDefinitions {
 
 
     @Then("^Se registran los datos de la campana de servicio al cliente predictiva$")
-    public void se_registran_los_datos_de_la_campana_de_servicio_al_cliente_predictiva(List<DataCampana> listadatos) {
+    public void se_registran_los_datos_de_la_campana_de_servicio_al_cliente_predictiva(List<DataCampana> listadatos) throws InterruptedException {
         sacpredictiva.ingresarNombreCampana(listadatos.get(0).getNombre());
         sacpredictiva.ingresarFechaInicio(listadatos.get(0).getFechainicio());
         sacpredictiva.ingresarFechaFin(listadatos.get(0).getFechafin());

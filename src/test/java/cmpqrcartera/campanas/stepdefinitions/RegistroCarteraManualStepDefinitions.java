@@ -13,7 +13,7 @@ public class RegistroCarteraManualStepDefinitions {
     RegistroCampanaSteps carteramanual;
 
     @Then("^Se registran los datos de la campana de cartera m$")
-    public void se_registran_los_datos_de_la_campana_de_cartera_m(List<DataCampana> listadatos) {
+    public void se_registran_los_datos_de_la_campana_de_cartera_m(List<DataCampana> listadatos) throws InterruptedException {
         carteramanual.ingresarNombreCampana(listadatos.get(0).getNombre());
         carteramanual.ingresarFechaInicio(listadatos.get(0).getFechainicio());
         carteramanual.ingresarFechaFin(listadatos.get(0).getFechafin());

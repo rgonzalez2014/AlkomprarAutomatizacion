@@ -21,7 +21,7 @@ public class RegistroCarteraGrabacionesStepDefinitions {
         carteragrabaciones.ingresarHoraInicio(listadatos.get(0).getHorainicio());
         carteragrabaciones.ingresarHoraFin(listadatos.get(0).getHorafin());
         carteragrabaciones.ingresarDias(listadatos.get(0).getDias());
-        //carteragrabaciones.actualizar(listadatos.get(0).getActualizar());
+        carteragrabaciones.actualizar(listadatos.get(0).getActualizar());
         carteragrabaciones.seleccionarAreaCartera(listadatos.get(0).getArea());
         carteragrabaciones.seleccionarCanalGrabaciones(listadatos.get(0).getCanal());
         carteragrabaciones.seleccionarResponsable(listadatos.get(0).getResponsable());

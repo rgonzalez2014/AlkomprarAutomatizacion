@@ -16,7 +16,7 @@ public class RegistroCampana extends PageObject {
     By txtpassword = By.name("password");
     By btningresar = By.cssSelector("#ingresa");
     By btnadministracion = By.xpath("//*[@id='marco']/ul/li[1]/a/span");
-    By btncampanas = By.linkText("Campaña");
+    By btncampanas = By.xpath("//*[@id='marco']/ul/li[1]/ul/li[1]/a");
     By btncrear = By.xpath("//*[@id='crear-campana']/a");
     By txtcampana = By.name("nombre");
     By txtfechainicio = By.name("fecha_inicial");
@@ -95,17 +95,17 @@ public class RegistroCampana extends PageObject {
 
     public void actualizar(String actualizar) {
         Select actualiza = new Select(getDriver().findElement(listactualizar));
-        actualiza.selectByValue(actualizar);
+        actualiza.selectByVisibleText(actualizar);
     }
 
     public void areaCartera(String area) {
         Select areacar = new Select(getDriver().findElement(listareas));
-        areacar.selectByValue(area);
+        areacar.selectByVisibleText(area);
     }
 
     public void areaServicioCliente(String sac) {
         Select area = new Select(getDriver().findElement(listareas));
-        area.selectByValue(sac);
+        area.selectByVisibleText(sac);
     }
 
     public void areaDespachos(String despachos) {
@@ -159,70 +159,71 @@ public class RegistroCampana extends PageObject {
         responsable.selectByValue(responsablecampana);
     }
 
-    public void seleccionarGestion(String gestion) {
+    public void seleccionarGestion(String gestion) throws InterruptedException {
         getDriver().findElement(btngestion).click();
+        Thread.sleep(1000);
         Select asesor = new Select(getDriver().findElement(listgestion));
         asesor.selectByValue(gestion);
     }
 
     public void seleccionarCarteraPredictiva(String carterapredictiva) {
         Select campana = new Select(getDriver().findElement(listcampana));
-        campana.selectByValue(carterapredictiva);
+        campana.selectByVisibleText(carterapredictiva);
     }
 
     public void seleccionarCarteraProgresiva(String carteraprogresiva) {
         Select campana = new Select(getDriver().findElement(listcampana));
-        campana.selectByValue(carteraprogresiva);
+        campana.selectByVisibleText(carteraprogresiva);
     }
 
     public void seleccionarSacPredictiva(String sacpredictiva) {
         Select campana = new Select(getDriver().findElement(listcampana));
-        campana.selectByValue(sacpredictiva);
+        campana.selectByVisibleText(sacpredictiva);
     }
 
     public void seleccionarSacProgresiva(String sacprogresiva) {
         Select campana = new Select(getDriver().findElement(listcampana));
-        campana.selectByValue(sacprogresiva);
+        campana.selectByVisibleText(sacprogresiva);
     }
 
     public void seleccionarTelPredictiva(String telpredictiva) {
         Select campana = new Select(getDriver().findElement(listcampana));
-        campana.selectByValue(telpredictiva);
+        campana.selectByVisibleText(telpredictiva);
     }
 
     public void seleccionarTelProgresiva(String telprogresiva) {
         Select campana = new Select(getDriver().findElement(listcampana));
-        campana.selectByValue(telprogresiva);
+        campana.selectByVisibleText(telprogresiva);
     }
 
     public void seleccionarGrabacionSac(String grabsac) {
         Select campana = new Select(getDriver().findElement(listcampana));
-        campana.selectByValue(grabsac);
+        campana.selectByVisibleText(grabsac);
     }
 
     public void seleccionarGrabacionCartera(String grabcartera) {
         Select campana = new Select(getDriver().findElement(listcampana));
-        campana.selectByValue(grabcartera);
+        campana.selectByVisibleText(grabcartera);
     }
 
     public void seleccionarGrabacionTel(String grabtelemercadeo) {
         Select campana = new Select(getDriver().findElement(listcampana));
-        campana.selectByValue(grabtelemercadeo);
+        campana.selectByVisibleText(grabtelemercadeo);
     }
 
     public void seleccionarMensajeCartera(String mensajecartera) {
         Select campana = new Select(getDriver().findElement(btnplantilla));
-        campana.selectByValue(mensajecartera);
+        campana.selectByVisibleText(mensajecartera);
     }
 
     public void seleccionarMensajeSac(String mensajesac) {
         Select campana = new Select(getDriver().findElement(btnplantilla));
-        campana.selectByValue(mensajesac);
+        campana.selectByVisibleText(mensajesac);
     }
 
     public void seleccionarMensajeTel(String mensajetel) {
         Select campana = new Select(getDriver().findElement(btnplantilla));
-        campana.selectByValue(mensajetel);
+        campana.selectByVisibleText(mensajetel);
     }
 
     public void observaciones(String registrar) {

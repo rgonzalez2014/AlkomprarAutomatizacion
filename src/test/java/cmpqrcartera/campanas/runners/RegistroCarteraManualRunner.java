@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {"src/test/resources/cmpqr.cartera.featurescampanas/RegistroCampanas.feature"},
-        glue = {"cmpqrcartera.campanas.stepdefinitions"}, tags = {"@MCartera"}, snippets = SnippetType.CAMELCASE)
+        glue = {"cmpqrcartera.campanas.stepdefinitions"}, tags = {"@ManCartera"}, snippets = SnippetType.CAMELCASE)
 
 public class RegistroCarteraManualRunner {
 }

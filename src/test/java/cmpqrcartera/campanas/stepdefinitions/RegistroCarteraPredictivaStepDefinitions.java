@@ -38,7 +38,7 @@ public class RegistroCarteraPredictivaStepDefinitions {
     }
 
     @Then("^Se registran los datos de la campana de cartera predictiva$")
-    public void se_registran_los_datos_de_la_campana_de_cartera_predictiva(List<DataCampana> listadatos) {
+    public void se_registran_los_datos_de_la_campana_de_cartera_predictiva(List<DataCampana> listadatos) throws InterruptedException {
         carterapredictiva.ingresarNombreCampana(listadatos.get(0).getNombre());
         carterapredictiva.ingresarFechaInicio(listadatos.get(0).getFechainicio());
         carterapredictiva.ingresarFechaFin(listadatos.get(0).getFechafin());

@@ -139,7 +139,7 @@ public class RegistroCampanaSteps {
     }
 
     @Step
-    public void seleccionarGestion(String gestion) {
+    public void seleccionarGestion(String gestion) throws InterruptedException {
         campanaPOM.seleccionarGestion(gestion);
     }
 

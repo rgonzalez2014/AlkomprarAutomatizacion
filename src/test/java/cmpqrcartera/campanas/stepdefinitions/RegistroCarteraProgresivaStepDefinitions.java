@@ -14,7 +14,7 @@ public class RegistroCarteraProgresivaStepDefinitions {
 
 
     @Then("^Se registran los datos de la campana de cartera progresiva$")
-    public void se_registran_los_datos_de_la_campana_de_cartera_progresiva(List<DataCampana> listadatos) {
+    public void se_registran_los_datos_de_la_campana_de_cartera_progresiva(List<DataCampana> listadatos) throws InterruptedException {
         carteraprogresiva.ingresarNombreCampana(listadatos.get(0).getNombre());
         carteraprogresiva.ingresarFechaInicio(listadatos.get(0).getFechainicio());
         carteraprogresiva.ingresarFechaFin(listadatos.get(0).getFechafin());

@@ -13,7 +13,7 @@ public class RegistroSacProgresivaStepDefinitions {
     RegistroCampanaSteps sacprogresiva;
 
     @Then("^Se registran los datos de la campana de servicio al cliente progresiva$")
-    public void se_registran_los_datos_de_la_campana_de_servicio_al_cliente_progresiva(List<DataCampana> listadatos) {
+    public void se_registran_los_datos_de_la_campana_de_servicio_al_cliente_progresiva(List<DataCampana> listadatos) throws InterruptedException {
         sacprogresiva.ingresarNombreCampana(listadatos.get(0).getNombre());
         sacprogresiva.ingresarFechaInicio(listadatos.get(0).getFechainicio());
         sacprogresiva.ingresarFechaFin(listadatos.get(0).getFechafin());

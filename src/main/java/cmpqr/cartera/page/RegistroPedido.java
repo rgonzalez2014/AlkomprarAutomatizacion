@@ -236,7 +236,7 @@ public class RegistroPedido extends PageObject {
     }
 
     public void formularioClienteEnvio() {
-        WebDriverWait wait = new WebDriverWait(getDriver(), 20);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(pageclientefactura));
     }
 

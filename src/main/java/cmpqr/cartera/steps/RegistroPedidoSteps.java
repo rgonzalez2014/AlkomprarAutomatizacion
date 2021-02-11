@@ -152,7 +152,7 @@ public class RegistroPedidoSteps {
     }
 
     @Step
-    public void clienteEnvio() throws InterruptedException {
+    public void clienteEnvio() {
         pedidoPOM.formularioClienteEnvio();
     }
 

@@ -27,6 +27,7 @@ dependencies {
     implementation 'net.serenity-bdd:serenity-core:2.0.80'
     implementation 'org.slf4j:slf4j-simple:1.7.7'
     implementation 'com.google.guava:guava:23.0'
+    implementation 'junit:junit:4.12'
 }
 // Para configurar propiedades del comando de ejecucion de pruebas con Gradle
 test {
